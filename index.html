@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <!-- Start Section Game-->
+    <section class="game-section">
+      <div class="game-container">
+        <!-- Winner -->
+        <div class="winner">
+          <h4>Let's Play</h4>
+        </div>
+        <!-- Counting Score -->
+        <div class="score">
+          <div class="first-player">
+            <h2>X</h2>
+            <p class="x-score"></p>
+          </div>
+          <div class="second-player">
+            <h2>O</h2>
+            <p class="o-score"></p>
+          </div>
+        </div>
+        <!-- End Counting Score -->
+        <!-- Start Game box -->
+        <div class="game-box">
+          <div class="game-item" cellIndex="0"></div>
+          <div class="game-item" cellIndex="1"></div>
+          <div class="game-item" cellIndex="2"></div>
+          <div class="game-item" cellIndex="3"></div>
+          <div class="game-item" cellIndex="4"></div>
+          <div class="game-item" cellIndex="5"></div>
+          <div class="game-item" cellIndex="6"></div>
+          <div class="game-item" cellIndex="7"></div>
+          <div class="game-item" cellIndex="8"></div>
+        </div>
+        <!-- Reset button -->
+        <div class="controls">
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Game -->
+    <!-- JS links -->
+    <script src="./main.js"></script>
+  </body>
+</html>

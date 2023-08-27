@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+font-family: 'Kanit', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.game-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #256d85;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: aliceblue;
+}
+.game-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+/* Score styling */
+.score {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  font-size: 1.2rem;
+}
+
+/* Game tic-toc-toe styling */
+.game-box {
+  position: absolute;
+  top: 25%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+}
+.game-item {
+  border: 3px solid aliceblue;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.game-item:first-child,
+.game-item:nth-child(2),
+.game-item:nth-child(3) {
+  border-top: none;
+}
+.game-item:nth-child(3n + 1) {
+  border-left: none;
+}
+.game-item:nth-child(3n - 3) {
+  border-right: none;
+}
+.game-item:last-child,
+.game-item:nth-child(8),
+.game-item:nth-child(7) {
+  border-bottom: none;
+}
+
+/* Reset button styling */
+.controls {
+  position: absolute;
+  bottom: 10%;
+}
+.controls #reset {
+  color: #fff;
+  background-color: #153d4b;
+  padding: 20%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  font-weight: bold;
+}
+.controls #reset:hover {
+  box-shadow: 0px 5px 5px aliceblue;
+  background-color: #2a7591;
+}
+/*  Winner  */
+.winner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  min-width: 13%;
+  min-height: 5%;
+  background-color: #fff;
+  border-radius: 2%;
+}
+.winner h4 {
+  color: #153d4b;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
